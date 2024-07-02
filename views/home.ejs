@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hilltop Haven - Welcome</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a:hover {
+        color: #000000; /* Change color on hover */
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s; /* Smooth transition for link color */
+      }
+      section {
+        padding: 25px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #333;
+        margin-bottom: 15px;
+      }
+      p {
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto; /* Center align images */
+        border-radius: 8px; /* Rounded corners for images */
+        margin-bottom: 20px;
+      }
+      .button-container {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+      }
+      .button {
+        background-color: #ffffff;
+        color: #3498db;
+        padding: 5px 15px;
+        border: 0.1px outset #24ffff;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: background-color 0.3s;
+      }
+      .button:hover {
+        background-color: #000000;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Hotel Logo" />
+        <h1>Hilltop Haven</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#vision-mission">Vision & Mission</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="general">General Information</a></li>
+          <li><a href="info">Hotel Information</a></li>
+          <li><a href="book">Book a Room</a></li>
+          <li><a href="contact">Contact Us</a></li>
+          <li><a href="Rent">Car Rent</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="vision-mission">
+      <h2>Vision & Mission</h2>
+      <p>
+        Vision: "To become the preferred choice for travelers seeking
+        unparalleled comfort, exceptional service, and unforgettable experiences
+        in our city."
+      </p>
+      <p>
+        Mission: "Our mission is to create a welcoming environment where every
+        guest feels at home, offering luxurious accommodations, personalized
+        service, and unique amenities that exceed expectations. We are committed
+        to environmental sustainability, community engagement, and continuous
+        improvement to ensure the highest level of satisfaction for our guests
+        and stakeholders."
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <img src="images/Hotel 5.jpg" alt="Hotel" width="400px" height="250px" />
+      <img
+        src="images/Hotel 2.jpg"
+        alt="Hotel Reception"
+        width="400px"
+        height="250px"
+      />
+      <img
+        src="images/Hotel 1.jpg"
+        alt="Beach view"
+        width="400px"
+        height="250px"
+      />
+      <img
+        src="images/Hotel 3.jpg"
+        alt="Room view"
+        width="400px"
+        height="250px"
+      />
+    </section>
+
+    <div class="button-container">
+      <a href="/login" class="button">Sign In</a>
+      <a href="/signup" class="button">Sign Up</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Hilltop Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8; /* Light gray background */
+        color: #333; /* Dark gray text */
+}
+header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .logo img {
+        max-width: 100px; /* Adjusted logo size */
+        vertical-align: middle;
+    }
+    .logo h1 {
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+    }
+    section {
+        padding: 25px;
+        margin: 20px 0; /* Added margin between sections */
+        background-color: #fff; /* White background */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        text-align: left; /* Align text to the left */
+    }
+    p {
+        line-height: 1.6; /* Improved readability */
+    }
+    .faq-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    .faq {
+        background-color: #f0f0f0; /* Light gray FAQ background */
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .faq h3 {
+        margin-top: 0;
+        color: #333; /* Dark gray FAQ headings */
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: bottom;
+        bottom: 0;
+        width: 100%;
+    }

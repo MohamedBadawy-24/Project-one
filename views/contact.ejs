@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Hilltop Haven</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+      }
+
+      .logo img {
+        max-width: 100px; /* Adjusted logo size */
+        vertical-align: middle;
+      }
+
+      .logo h1 {
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      section {
+        padding: 25px;
+        margin: 20px 0; /* Added margin between sections */
+        background-color: #fff;
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      }
+
+      input[type="submit"] {
+        background-color: #3498db;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0; /* Adjusted padding */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Hotel Logo" />
+        <h1>Hilltop Haven</h1>
+      </div>
+    </header>
+
+    <main>
+      <section id="address" class="section">
+        <h1>Address</h1>
+        <p>
+          Masaken Al Mohandesin<br />
+          Nasr City, Cairo<br />
+          P.O. Box: 456
+        </p>
+      </section>
+
+      <section id="map" class="section">
+        <h2>Map</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.5423177397297!2d31.348680999999996!3d30.078650999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e05c4cb03b1%3A0xf0fcbdbabca253b7!2sTOLIP%20Golden%20Plaza%20Hotel!5e0!3m2!1sen!2seg!4v1712953326696!5m2!1sen!2seg"
+          width="300"
+          height="225"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section id="key-personnel" class="section">
+        <h2>Key Personnel</h2>
+        <ul>
+          <li>
+            <strong>Mohamed Badawy</strong> - General Manager -
+            <a href="mailto:mohhamed148@gmail.com">mohhamed148@gmail.com</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="send-message" class="section">
+        <h2>Send a Message</h2>
+        <form action="/contact" method="POST" onsubmit="return validateForm();">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="50"
+            required
+          ></textarea
+          ><br /><br />
+          <input type="submit" name="submit" value="Send" class="submit-btn" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Hilltop Haven. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // Name validation
+        if (name.trim() === "") {
+          alert("Please enter your name.");
+          return false; // Prevent form submission
+        }
+
+        // Email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          return false; // Prevent form submission
+        }
+
+        // Message validation
+        if (message.trim() === "") {
+          alert("Please enter your message.");
+          return false; // Prevent form submission
+        }
+
+        return true; // Allow form submission
+      }
+    </script>
+  </body>
+</html>
